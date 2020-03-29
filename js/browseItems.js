@@ -18,9 +18,7 @@ function filterCategory (type, category){
             category[i].style.display = "none";
         }        
     }
-    
 }
-
 
 function activeCategory (type, category){
     
@@ -34,8 +32,7 @@ function activeCategory (type, category){
         {
             category[i].classList.remove("shadow")
         }        
-    }
-    
+    } 
 }
 
 wallCategory.addEventListener("click", function () {

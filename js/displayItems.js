@@ -15,29 +15,31 @@ function loadItems(array, items)
     for (let i = 0; i < array.length ; i++)
     {
         // Deconstruct object array
-        let {itemname, itemprice, itemcategory,imagepath} = array[i];
+        let {itemsku, itemname, itemprice, itemcategory,imagepath} = array[i];
         
         // div gridcontainer
         let gridcontainer = document.createElement("div");
+        ///// gridcontainer.setAttribute("id",itemsku);
         gridcontainer.setAttribute("class","gridcontainer "+itemcategory);
+        gridcontainer.setAttribute('onclick',`pullItemDetails("${itemsku}");`);
       
-        // Recommended Image Path
+        // Image Path
         let recomImage = document.createElement("img");
         recomImage.setAttribute ("src",imagepath)
       
-        // Recommended Price
+        //Price
         let recomPrice = document.createElement("p");
         let recomPriceData = document.createTextNode("₱"+itemprice)
         recomPrice.setAttribute("class","itemprice");
         recomPrice.appendChild(recomPriceData);
 
-        // Recommended Name
+        //Name
         let recomName = document.createElement("p");
         let recomNameData = document.createTextNode(itemname)
         recomName.setAttribute("class","itemname");
         recomName.appendChild(recomNameData);
 
-        // AppendChild All Recommeded data to gridcontainer
+        // AppendChild All data to gridcontainer
         gridcontainer.appendChild(recomImage);
         gridcontainer.appendChild(recomName);
         gridcontainer.appendChild(recomPrice);  
