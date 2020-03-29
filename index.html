@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Michaels | Frames</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="./js/data.json"></script></script>
+  <script type="text/javascript" src="./js/displayItems.js"></script></script>
+</head>
+<body>
+
+  <!-- View Cart -->
+  <img class="viewcart" src="./img/viewcart.jpg">
+
+  <!-- Image slideshow -->
+  <div class="imageContainer">
+    <img class="imageSlide" src="./img/coverphoto_1.jpg">
+    <img class="imageSlide" src="./img/coverphoto_2.jpg">
+    <img class="imageSlide" src="./img/coverphoto_3.jpg">
+    <img class="imageSlide" src="./img/coverphoto_4.jpg">
+    <button class="arrowStyle arrowLeft">&#10094;</button>
+    <button class="arrowStyle arrowRight">&#10095;</button>
+  </div>
+  
+  <!-- Recommended title -->
+  <div clas="itemtitle">
+    <div class="btmborder">
+      <p> ── Recommended For You ── </p>
+    </div>
+  </div>
+
+  <!-- Reccommended Content -->
+  <div id="recommendeditems" class="enablegrid"></div>
+
+  <!-- Browse title -->
+  <div clas="itemtitle">
+    <div class="btmborder">
+      <p> ── Browse All Frames ──</p>  
+        <!-- Category List -->
+      <ul class="categorylist">
+        <li class="wallCategory">Wall</li>
+        <li class="clipCategory">Clip</li>
+        <li class="documentCategory">Document</li>
+        <li class="floatCategory">Float</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Browse Content -->
+  <div id="browseitems" class="enablegrid"></div>
+
+  <!-- <footer class="zone yellow">All images are from https://www.michaels.com</footer> -->
+
+  <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+  <script type="text/javascript" src="./js/imageSlider.js"></script></script>
+  <script type="text/javascript" src="./js/browseItems.js"></script></script>
+  <script type="text/javascript" src="./js/modal.js"></script></script>
+
+</body>
+</html>
