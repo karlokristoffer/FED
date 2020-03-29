@@ -4,6 +4,7 @@
   <title>Michaels | Frames</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
   <script type="text/javascript" src="./js/data.json"></script></script>
   <script type="text/javascript" src="./js/displayItems.js"></script></script>
 </head>
@@ -49,25 +50,45 @@
   <!-- Browse Content -->
   <div id="browseitems" class="enablegrid"></div>
 
-  <!-- <footer class="zone yellow">All images are from https://www.michaels.com</footer> -->
-
-  <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
-
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+  <div class="modalcontent close">
+    <table>
+      <tr>
+        <td rowspan="5" class="modalImage"><img src="./img/browse/collageclip.jpg"></td>
+      </tr>
+      <tr>
+        <td class="modalName paddingLeft">Collage Clip Frame by Studio Décor®</td>  
+        <td class="modalPrice paddingLeft">2000</td>
+      </tr>
+      <tr>
+        <td colspan = "2" class="modalSku paddingLeft">Item # ccf2024</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="modalDesc paddingLeft">This innovative Black Clip Wall Frame by Studio Decor® offers a quirky way to display your favorite photos. The frame has three clotheslines running across it. Simply pin your photos to the lines with a clothespin and add a different character to your wall decor. This simple frame ensures that this frame complements all decor styles.</td>
+      </tr>
+      <tr>
+        <td colspan="2"  class="modalAddCart paddingLeft" ><button>ADD TO CART</button></td>
+      </tr>
+    </table>
+    <!-- <div class="modalImage"></div>
+    <div class="modalName">Collage Clip Frame by Studio Décor®</div>    
+    <div class="modalSku">ccf2024</div>
+    <div class="modalPrice">2000</div>
+    <div class="modalCart"><button class="addCart">ADD TO CART</button></div>
+    <div class="modalDesc">This innovative Black Clip Wall Frame by Studio Decor® offers a quirky way to display your favorite photos. The frame has three clotheslines running across it. Simply pin your photos to the lines with a clothespin and add a different character to your wall decor. This simple frame ensures that this frame complements all decor styles.</div> -->
   </div>
 
+    
+
+  </div>
 </div>
 
   <script type="text/javascript" src="./js/imageSlider.js"></script></script>
   <script type="text/javascript" src="./js/browseItems.js"></script></script>
-  <script type="text/javascript" src="./js/modal.js"></script></script>
+  <script type="text/javascript" src="./js/modalDisplay.js"></script></script>
 
 </body>
 </html>
