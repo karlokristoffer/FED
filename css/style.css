@@ -192,11 +192,15 @@ ul {
     padding-left: 25px;
 }
 
+.modalImage img {
+    width:500px;
+}
+
 .modalName {
     font-size: 1.5vw;
     font-weight: bold;
     height: 0px;
-    vertical-align: bottom;
+    vertical-align: top
     /* column-span: ; */
 }
 
@@ -204,6 +208,12 @@ ul {
     font-size: 1vw;
     vertical-align: top;
     color: dimgray;
+    text-align: right;
+
+}
+.modalDesc{
+    font-size: 1.2vw;
+    vertical-align: top;
 }
 
 .modalPrice{
@@ -213,18 +223,85 @@ ul {
     vertical-align: bottom;
 }
 
-  .modalDesc{
-      font-size: 1.5vw;
-      vertical-align: top;
-  }
+.modalAddCart button {
+    width:100%;
+    height: 5vh;
+    vertical-align: bottom;
+    background-color: rgb(218, 19, 49);
+    color:white;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-  .modalAddCart {
-      text-align: right;
+.modalAddCart button:hover {
+    background-color: rgb(207, 24, 31);
+}
 
-  }
-  /* .modalImage img{
-    width:200px;
-  } */
+.viewCartHeader {
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bold;
+}
+
+.viewCartName {
+    font-size: 2vh;
+    text-align: center;
+    width: 30%;
+}
+
+
+.viewCartQuantity {
+    font-size: 2vh;
+    text-align: center;
+    width: 20%;
+}
+
+.viewCartPrice {
+    font-size: 2vh;
+    text-align: center;
+    width: 20%;
+}
+
+.viewTotalPrice
+{
+    text-align: right;
+    align-items: right;
+    width: 90%;
+}
+
+.redBold
+{
+    color: red;
+    font-weight: bolder;
+}
+
+.cart{
+    border-bottom-style: solid;
+    border-color: rgb(236, 234, 234);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
+
+.ordernow {
+    width:18%;
+    height: 5vh;
+    vertical-align: bottom;
+    background-color: rgb(218, 19, 49);
+    color:white;
+    align-items: right;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ordernow:hover {
+    background-color: rgb(207, 24, 31);
+}
 
 
 @media only screen and (max-width:1370px) {
@@ -245,5 +322,13 @@ ul {
     .enablegrid {
         grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     } 
+
+    .gridcontainer > p{
+        font-size:1.5vw;
+    }
+
+    .modalImage img {
+        width:350px;
+    }
       
   }
