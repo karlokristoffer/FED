@@ -192,6 +192,17 @@ ul {
     padding-left: 25px;
 }
 
+.cartAlert
+{
+    color:red;
+    font-size: 1.5vh;
+    display: none;
+    vertical-align: top;
+    font-weight: bold;
+    text-align: left;
+}
+
+
 .modalImage img {
     width:500px;
 }
