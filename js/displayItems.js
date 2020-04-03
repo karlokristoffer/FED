@@ -8,6 +8,7 @@ function arrayCombineItems(firstarray,secondarray)
     return firstarray.concat(secondarray)
 }
 
+
 function loadItems(array, items)
 {
     let htmlItems = document.getElementById(items);

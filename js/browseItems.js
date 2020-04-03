@@ -20,6 +20,7 @@ function filterCategory (type, category){
     }
 }
 
+
 function activeCategory (type, category){
     
     for (let i = 0; i < category.length; i++)

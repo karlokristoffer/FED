@@ -15,6 +15,7 @@ function showSlides(n){
     slides[i].style.display = "none";
   } 
 
+
   if (n > slides.length) {
     slideIndex = 1;
   }
