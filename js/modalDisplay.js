@@ -7,6 +7,7 @@ const modalPrice = document.getElementsByClassName("modalPrice")[0];
 const modalAddToCart = document.getElementsByClassName("addCart")[0];
 const viewCartModal = document.getElementById("viewCartModal");
 const viewCartImage= document.getElementsByClassName("viewcart")[0];
+const cartAlert = document.getElementsByClassName("cartAlert")[0];
 
 function deconArray (sku) {
   for (let i = 0; i< arrayAllItems.length; i++){ 
@@ -37,6 +38,7 @@ function pullItemDetails (sku) {
 window.onclick = function(event) {
   if (event.target == imageModal) {
     imageModal.style.display = "none";
+    cartAlert.style.display = "none";
   }
   else   if (event.target == viewCartModal) {
     viewCartModal.style.display = "none";

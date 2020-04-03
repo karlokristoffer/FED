@@ -13,9 +13,11 @@ function addToCart (sku) {
     let newQuantity = checkQuantity(itemsku, 1);
     if (newQuantity > 1 ){
       // console.log("Adding Quantity");
+      cartAlert.style.display = "block";
     }
     else{
     finalCart.push({itemsku,itemname, itemprice,imagepath, quantity});
+    cartAlert.style.display = "block";
     }
   }
   displayCart();
